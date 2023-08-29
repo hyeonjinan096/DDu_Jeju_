@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtStepHtml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Turn Left"
+            android:textColor="@color/quantum_black_text"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/txtStepTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="12 min"
+        android:layout_below="@+id/txtStepHtml"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/quantum_grey500"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/txtStepDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtStepTime"
+        android:layout_marginTop="20dp"
+        android:text="15km"
+        android:textColor="@color/quantum_grey500"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+    </RelativeLayout>
+</layout>

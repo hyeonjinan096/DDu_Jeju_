@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "873078412128",
+    "firebase_url": "https://searchaddress-edabc-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "searchaddress-edabc",
+    "storage_bucket": "searchaddress-edabc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873078412128:android:45eae8875982093c4cc405",
+        "android_client_info": {
+          "package_name": "com.lyj.direction"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873078412128-agn54fhc395h4irjpv4622i0m49ocd2g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA01xSLrYKuxmy31k-LrbAP5IcR8NDUEZo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873078412128-agn54fhc395h4irjpv4622i0m49ocd2g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873078412128:android:4c52532a0bd5b62a4cc405",
+        "android_client_info": {
+          "package_name": "com.lyj.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873078412128-agn54fhc395h4irjpv4622i0m49ocd2g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA01xSLrYKuxmy31k-LrbAP5IcR8NDUEZo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873078412128-agn54fhc395h4irjpv4622i0m49ocd2g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

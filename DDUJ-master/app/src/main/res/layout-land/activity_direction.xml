@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/jejubackground"
+        android:orientation="vertical"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        tools:context=".DirectionActivity">
+
+        <fragment
+            android:id="@+id/directionMap"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="140dp" />
+
+        <include
+            android:id="@+id/bottom_sheet"
+            layout="@layout/bottom_sheet_layout"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/enableTraffic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/ic_traffic"
+            app:backgroundTint="@color/white"
+            app:fabCustomSize="40dp"
+            app:tint="@color/itemTextColor" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp">
+            <ImageView
+                android:id="@+id/imgStartLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location"
+                app:tint="@color/primaryColor" />
+                <TextView
+                    android:id="@+id/txtStartLbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/imgStartLocation"
+                    android:contentDescription="from"
+                    android:text="출발지"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            <fragment
+                android:id="@+id/txtStartLocation"
+                android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+
+                android:layout_toRightOf="@id/txtStartLbl"
+
+                android:ellipsize="end"
+                android:hint="출발지 입력"
+                android:maxLines="1" />
+
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/imgStartLocation"
+                    android:layout_alignStart="@+id/txtStartLocation"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/quantum_black_divider" />
+
+            <ImageView
+                android:id="@+id/imgEndLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_location"
+                app:tint="@color/quantum_googred500" />
+
+            <TextView
+                android:id="@+id/txtEndLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/imgEndLocation"
+                android:contentDescription="to"
+                android:text="도착지"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <fragment
+                android:id="@+id/txtEndLocation"
+                android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/txtEndLbl"
+                android:layout_below="@+id/txtStartLocation"
+
+                android:ellipsize="end"
+                android:hint="도착지 입력"
+                android:maxLines="1" />
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/imgEndLocation"
+                    android:layout_alignStart="@+id/txtEndLocation"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/quantum_black_divider" />
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
